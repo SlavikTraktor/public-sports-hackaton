@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+header {
+  padding-top: 30px;
+  padding-bottom: 45px;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+
+    .main-nav {
+      display: flex;
+      width: fit-content;
+      background-color: $color-grey-2;
+      border-radius: 35px;
+      padding: 12px 15px;
+    }
+
+    .extra-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: fit-content;
+      background-color: $color-grey-2;
+      border-radius: 35px;
+      padding: 12px 8px;
+
+      .nav-separator {
+        background-color: $color-blue-3;
+        width: 2px;
+        height: 80%;
+      }
+
+      .nav-icon {
+        // FIXME: сделать нормальный менеджер svg (пнг - минус качество и невозможно изменять цвет)
+        //также надо обернуть во враппер, чтобы потом реализовать нормальные ховер эффекты
+        transform: scale(0.8);
+        //
+        margin: 0 20px;
+        width: 35px;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        padding: 18px 5px;
+
+        &.nav-map {
+          background-image: url('/icons/map-icon.svg');
+        }
+
+        &.nav-search {
+          background-image: url('/icons/search-icon.svg');
+        }
+      }
+    }
+
+    .nav-item {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      color: $color-grey-5;
+      width: 135px;
+      padding: 18px 5px;
+      margin-right: 15px;
+      background-color: $color-grey-3;
+      text-decoration: none;
+      transition: 0.2s;
+      border-radius: 25px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &.active {
+        background-color: $color-blue-3;
+        color: $color-grey-3;
+      }
+    }
+  }
+}
+
+aside.select-type {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  background-color: $color-grey-2;
+  border-radius: 40px;
+  padding: 5px;
+
+  .type-item {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: $color-grey-5;
+    width: 120px;
+    padding: 15px 5px;
+    margin-right: 3px;
+    text-decoration: none;
+    transition: 0.2s;
+    border-radius: 35px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      background-color: $color-blue-3;
+      color: $color-grey-3;
+    }
+  }
+}
+
+.trash-icon {
+  width: 25px;
+  height: 30px;
+  background-image: url('/icons/trashbox-icon.svg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  cursor: pointer;
+}
+
+.notification-page {
+  font-family: 'Ubuntu', sans-serif;
+  .notification-list {
+    padding: 20px 0;
+
+    .notification {
+      display: flex;
+      margin-bottom: 15px;
+
+      .notification-content {
+        background-color: $color-blue-3;
+        flex-grow: 95;
+        font-size: 18px;
+        border-radius: 15px;
+
+        .notification-header {
+          display: flex;
+          align-items: center;
+          padding: 12px 25px;
+
+          .title {
+            padding: 14px 35px;
+            background-color: $color-grey-2;
+            opacity: 0.8;
+            color: $color-grey-5;
+            width: 180px;
+            text-align: center;
+            font-weight: 100;
+            border-radius: 12px;
+          }
+
+          .time {
+            font-size: 16px;
+            opacity: 0.5;
+            font-style: italic;
+            margin-left: auto;
+          }
+        }
+
+        .notification-body {
+          padding: 5px 25px 15px 25px;
+        }
+      }
+
+      .notification-icons {
+        flex-grow: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
