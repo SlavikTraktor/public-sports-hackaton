@@ -5,23 +5,18 @@ import Valleyball from '../Icons/Valleyball';
 import Workout from '../Icons/Workout';
 
 export const SportIcons = ({
-  sports, width, height, color,
-}) => {
-  return sports.map((sportName) => {
-    switch (sportName) {
-      case 'football':
-        return <Football width={width} height={height} color={color} />;
-
-      case 'basketball':
-        return <Basketball width={width} height={height} color={color} />;
-
-      case 'valleyball':
-        return <Valleyball width={width} height={height} color={color} />;
-
-      case 'workout':
-        return <Workout width={width} height={height} color={color} />;
-      default:
-        return null;
-    }
-  });
-};
+  sports, svgWidth, svgHeight, color,
+}) => sports.map((sportName) => {
+  switch (sportName) {
+    case 'football':
+      return <Football svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
+    case 'basketball':
+      return <Basketball svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
+    case 'valleyball':
+      return <Valleyball svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
+    case 'workout':
+      return <Workout svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
+    default:
+      return null;
+  }
+});

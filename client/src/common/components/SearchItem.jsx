@@ -7,16 +7,14 @@ export const SearchItem = ({ user, spot }) => {
     return (
       <div className="search-item-wrapper">
         <div className="flex-part">
-          <div className="avatar"></div>
+          <div className="avatar" />
           <span>
             {user.name}
             <small>{user.id}</small>
           </span>
         </div>
-        <div className="flex-part">
-          <div className="interests">
-            <SportIcons sports={['football', 'basketball']} />
-          </div>
+        <div className="flex-part interests">
+          <SportIcons sports={['football', 'basketball']} svgWidth={40} svgHeight={40} />
         </div>
         <div className="flex-part">
           <div className="arrow-icon">

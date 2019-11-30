@@ -5,7 +5,7 @@ import { Notifications } from '../pages/Notifications';
 import { MapPage } from '../pages/MapPage';
 import { Search } from '../pages/Search';
 import { UserProfile } from '../pages/UserProfile';
-import * as Consts from '../common/constants/constants';
+import { URLS } from '../common/constants/constants';
 
 const Spots = () => <div />;
 
@@ -13,11 +13,11 @@ export const App = () => (
   <Router>
     <Header />
     <Switch>
-      <Route path={Consts.$NotificatinosLink} component={Notifications} />
-      <Route path={Consts.$SpotsLink} component={Spots} />
-      <Route path={Consts.$SearchLink} component={Search} />
-      <Route path={Consts.$MapPageLink} component={MapPage} />
-      <Route path={Consts.$UserProfileLink} component={UserProfile} />
+      <Route path={URLS.NOTIFICATION_PAGE} component={Notifications} />
+      <Route path={URLS.SPOTS_PAGE} component={Spots} />
+      <Route path={URLS.SERCH_PAGE} component={Search} />
+      <Route path={URLS.MAP_PAGE} component={MapPage} />
+      <Route path={URLS.PROFILE_PAGE} component={UserProfile} />
     </Switch>
   </Router>
 );
