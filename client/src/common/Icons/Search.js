@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgSearch = ({ svgWidth, svgHeight, color }) => (
   <svg width={svgWidth || 40} height={svgHeight || 40}>

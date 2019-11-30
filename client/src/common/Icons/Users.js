@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgUsers = ({ svgWidth, svgHeight, color }) => (
   <svg width={svgWidth || 45} height={svgHeight || 40}>

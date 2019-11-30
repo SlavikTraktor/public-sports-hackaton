@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgWorkout = ({ svgWidth, svgHeight, color }) => (
   <svg width={svgWidth || 34} height={svgHeight || 40}>

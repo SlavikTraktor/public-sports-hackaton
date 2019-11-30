@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const SvgPointer = ({ svgWidth, svgHeight, color }) => (
   <svg width={svgWidth || 31} height={svgHeight || 40}>
