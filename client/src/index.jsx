@@ -1,14 +1,14 @@
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import * as React from 'react';
-import { Notification } from './pages/Notification';
+import { MapPage } from './pages/MapPage';
 import { store } from './store';
 
 import './scss/index.scss';
 
 render(
   <Provider store={store}>
-    <Notification />
+    <MapPage />
   </Provider>,
   document.getElementById('root'),
 );
