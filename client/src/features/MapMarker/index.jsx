@@ -1,21 +1,19 @@
 import * as React from 'react';
+
 import { Marker, Popup } from 'react-leaflet';
 import { Loader } from '../../common/components/Loader';
-
-const mockData = {
-  title: 'Площадка *name*',
-  id: 'id#0001',
-  adress: 'школа №525',
-  paramsList: ['На площадке 20 человек', 'Бесплатно', 'Есть освещение', 'Открыто круглосуточно'],
-  sportTypes: ['workout', 'football', 'basketball', 'volleyball'],
-};
+import { activeIcon, defaultIcon } from './markerIcons';
+import { mockData } from './mockData';
 
 // eslint-disable-next-line no-unused-vars
 export const MapMarker = ({ position, id }) => {
   const [isLoader, setIsLoader] = React.useState(true);
   const [spotData, setSpotData] = React.useState({});
+  const [icon, setIcon] = React.useState(defaultIcon);
 
-  const onPopupOpen = () => {
+  const onPopupOpenFirstTime = () => {
+    setIcon(activeIcon);
+
     setTimeout(() => {
       setSpotData(mockData);
 
@@ -23,10 +21,14 @@ export const MapMarker = ({ position, id }) => {
     }, 500);
   };
 
+  const onPopupClose = () => {
+    setIcon(defaultIcon);
+  };
+
   if (isLoader) {
     return (
-      <Marker position={position}>
-        <Popup onOpen={onPopupOpen} className="custom-map-marker">
+      <Marker position={position} icon={icon}>
+        <Popup onOpen={onPopupOpenFirstTime} className="custom-map-marker">
           <Loader maxHeight />
         </Popup>
       </Marker>
@@ -34,8 +36,12 @@ export const MapMarker = ({ position, id }) => {
   }
 
   return (
-    <Marker position={position}>
-      <Popup className="custom-map-marker">
+    <Marker position={position} icon={icon}>
+      <Popup
+        onOpen={() => setIcon(activeIcon)}
+        onClose={onPopupClose}
+        className="custom-map-marker"
+      >
         <div className="popup-title">
           <div className="title-top">
             <h3>{spotData.title}</h3>
