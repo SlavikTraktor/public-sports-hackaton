@@ -1,7 +1,7 @@
 import React from "react";
 
 const SvgTrashbox = ({ width, height, color }) => (
-  <svg width={width || 34} height={height || 34}>
+  <svg width={width || 24} height={height || 24}>
     <path fill="none" d="M0 0h24v24H0V0z" />
     <path
       fill={color || '#798A9F'}

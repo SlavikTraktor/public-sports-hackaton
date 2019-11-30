@@ -13,10 +13,8 @@ export const SearchItem = ({ user, spot }) => {
             <small>{user.id}</small>
           </span>
         </div>
-        <div className="flex-part">
-          <div className="interests">
-            <SportIcons sports={['football', 'basketball']} />
-          </div>
+        <div className="flex-part interests">
+          <SportIcons sports={['football', 'basketball']} />
         </div>
         <div className="flex-part">
           <div className="arrow-icon">
