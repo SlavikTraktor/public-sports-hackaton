@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="40px" viewBox="0 0 31 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56 (81588) - https://sketch.com -->
+    <title>pointer</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Search-Page" transform="translate(-851.000000, -328.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="active-input" transform="translate(214.000000, 174.000000)">
+                <g id="search-item" transform="translate(0.000000, 129.000000)">
+                    <path d="M652.142095,65 C652.142095,65 667.4,48.7306122 667.4,40.3346939 C667.4,31.8816327 660.55483,25 652.142095,25 C643.787265,25 637,31.8816327 637,40.3346939 C637,45.9918367 643.903075,55.2040816 648.312109,60.5673469 L652.142095,65 L652.142095,65 Z M651.829666,35.1960784 C654.681826,35.1960784 657,37.5248627 657,40.3797647 C657,43.0592941 654.681826,45.3921569 651.829666,45.3921569 C649.036838,45.3921569 646.6,43.0633725 646.6,40.3797647 C646.6,37.5248627 649.036838,35.1960784 651.829666,35.1960784 L651.829666,35.1960784 Z" id="pointer"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

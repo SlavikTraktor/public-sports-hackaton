@@ -26,22 +26,14 @@ header {
 
     .nav-icon {
       margin: 0 20px;
-      width: 30px;
       text-decoration: none;
-      background-repeat: no-repeat;
-      background-size: auto 100%;
-      padding: 18px 5px;
-      background-size: 100% auto;
-      background-position-y: center;
+      padding: 5px;
 
-      &.nav-map {
-        background-image: url('/icons/map-icon.svg');
-      }
-
-      &.nav-search {
-        background-image: url('/icons/search-icon.svg');
+      svg{
+        transform: scale(0.8);
       }
     }
+
   }
 
   .nav-item {

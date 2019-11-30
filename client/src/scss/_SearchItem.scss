@@ -1,0 +1,47 @@
+.search-item-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 54px;
+  padding: 7px 10px;
+  margin: 10px auto;
+  background-color: $color-grey-2;
+  border-radius: 15px;
+  max-width: 1200px;
+  width: 100%;
+  transition: 0.5s;
+  color: $color-grey-5;
+}
+
+.flex-part {
+  display: flex;
+  align-items: center;
+
+  svg{
+    transform: scale(0.6);
+  }
+
+  span{
+    font-size: 120%;
+
+    small {
+      margin-left: 5px;
+      font-size: 50%;
+    }
+  }
+  
+
+  .pointer-icon {
+    margin: 0 10px;   
+  }
+
+  .users-icon {
+    margin: 0 10px;
+  }
+
+  .arrow-icon {
+    transform: scale(0.8);
+    margin-left: 40px;
+  }
+}
