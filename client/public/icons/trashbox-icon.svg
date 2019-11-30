@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="33px" viewBox="0 0 26 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56 (81588) - https://sketch.com -->
+    <title>trashbox-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Notifications---friends" transform="translate(-1638.000000, -357.000000)" fill="#798A9F" fill-rule="nonzero">
+            <g id="post-wrap" transform="translate(257.000000, 307.000000)">
+                <g id="post">
+                    <path d="M1382.85714,79.3333333 C1382.85714,81.35 1384.52857,83 1386.57143,83 L1401.42857,83 C1403.47143,83 1405.14286,81.35 1405.14286,79.3333333 L1405.14286,57.3333333 L1382.85714,57.3333333 L1382.85714,79.3333333 Z M1387.42571,66.28 L1390.04429,63.695 L1394,67.5816667 L1397.93714,63.695 L1400.55571,66.28 L1396.61857,70.1666667 L1400.55571,74.0533333 L1397.93714,76.6383333 L1394,72.7516667 L1390.06286,76.6383333 L1387.44429,74.0533333 L1391.38143,70.1666667 L1387.42571,66.28 Z M1400.5,51.8333333 L1398.64286,50 L1389.35714,50 L1387.5,51.8333333 L1381,51.8333333 L1381,55.5 L1407,55.5 L1407,51.8333333 L1400.5,51.8333333 Z" id="trashbox-icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

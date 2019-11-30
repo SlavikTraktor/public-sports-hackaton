@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="41px" viewBox="0 0 40 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56 (81588) - https://sketch.com -->
+    <title>map-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Notifications---friends" transform="translate(-1560.000000, -69.000000)" fill="#B2CAD6" fill-rule="nonzero">
+            <g id="nav" transform="translate(1533.000000, 45.000000)">
+                <path d="M65.8888889,24.2727273 L65.5333333,24.3401515 L53.6666667,28.9924242 L40.3333333,24.2727273 L27.8,28.5429293 C27.3333333,28.7002525 27,29.104798 27,29.6217172 L27,63.6035354 C27,64.2328283 27.4888889,64.7272727 28.1111111,64.7272727 L28.4666667,64.6598485 L40.3333333,60.0075758 L53.6666667,64.7272727 L66.2,60.4570707 C66.6666667,60.2997475 67,59.895202 67,59.3782828 L67,25.3964646 C67,24.7671717 66.5111111,24.2727273 65.8888889,24.2727273 Z M53.6666667,60.2323232 L40.3333333,55.4901515 L40.3333333,28.7676768 L53.6666667,33.5098485 L53.6666667,60.2323232 Z" id="map-icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>
