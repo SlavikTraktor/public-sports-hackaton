@@ -1,5 +1,6 @@
 import * as React from 'react';
 import moment from 'moment';
+import { Icon } from '../utils/Icon';
 
 export const Notification = ({ name, date, text }) => (
   <div className="notification">
@@ -14,8 +15,8 @@ export const Notification = ({ name, date, text }) => (
       </div>
       <div className="notification-body">{text}</div>
     </div>
-    <div className="notification-icons">
-      <div className="trash-icon" />
+    <div className="trash-icon">
+      <Icon name="trashbox" />
     </div>
   </div>
 );

@@ -1,31 +1,31 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Icon } from '../utils/Icon';
-import * as Consts from '../constants/constants';
+import { URLS } from '../constants/constants';
 
 export const Header = () => (
   <header>
     <div className="wrapper">
       <nav>
         <div className="main-nav">
-          <Link to={Consts.$NotificatinosLink} className="nav-item active">
+          <NavLink to={URLS.NOTIFICATION_PAGE} activeClassName="active" className="nav-item">
             Уведомления
-          </Link>
-          <Link to={Consts.$SpotsLink} className="nav-item active">
+          </NavLink>
+          <NavLink to={URLS.SPOTS_PAGE} activeClassName="active" className="nav-item">
             Подписки
-          </Link>
-          <Link to={Consts.$UserProfileLink} className="nav-item active">
+          </NavLink>
+          <NavLink to={URLS.PROFILE_PAGE} activeClassName="active" className="nav-item">
             Профиль
-          </Link>
+          </NavLink>
         </div>
         <div className="main-nav">
-          <Link to={Consts.$MapPageLink} className="nav-icon">
-            <Icon name="map" width={40} height={40} />
-          </Link>
+          <NavLink to={URLS.MAP_PAGE} activeClassName="active" className="nav-icon">
+            <Icon name="map" svgWidth={40} svgHeight={40} />
+          </NavLink>
           <div className="nav-separator" />
-          <Link to={Consts.$SearchLink} className="nav-icon">
-            <Icon name="search" width={40} height={40} />
-          </Link>
+          <NavLink to={URLS.SERCH_PAGE} activeClassName="active" className="nav-icon">
+            <Icon name="search" svgWidth={40} svgHeight={40} />
+          </NavLink>
         </div>
       </nav>
     </div>

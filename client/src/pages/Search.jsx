@@ -26,7 +26,7 @@ export const Search = () => {
           onFocus={e => onInputFocus(e.target)}
         />
         <button type="button">
-          <Icon name="search" width={44} height={44} color="#FFF" />
+          <Icon name="search" svgWidth={44} svgHeight={44} color="#FFF" />
         </button>
       </div>
       <div id="result" className="search-result hidden">
