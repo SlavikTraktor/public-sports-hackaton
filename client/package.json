@@ -4,6 +4,7 @@
   "description": "hackaton project",
   "main": "index.js",
   "scripts": {
+    "svgr": "svgr -d src/common/Icons/ public/icons/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
     "build": "webpack --mode=development",
@@ -23,6 +24,8 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.7.4",
+    "@svgr/cli": "^4.3.3",
+    "@svgr/webpack": "^4.3.3",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.2.0",
     "eslint": "^6.7.0",

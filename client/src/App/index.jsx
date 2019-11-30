@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Header } from '../common/components/Header';
-import { MapPage } from '../pages/MapPage';
 import { Notifications } from '../pages/Notifications';
+import { MapPage } from '../pages/MapPage';
+import { Search } from '../pages/Search';
 import { UserProfile } from '../pages/UserProfile';
 import * as Consts from '../common/constants/constants';
 
 const Spots = () => <div />;
-const Search = () => <div />;
 
 export const App = () => (
   <Router>
