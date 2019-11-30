@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Icon } from '../utils/Icon';
 import { URLS } from '../constants/constants';
 
@@ -8,24 +8,24 @@ export const Header = () => (
     <div className="wrapper">
       <nav>
         <div className="main-nav">
-          <Link to={URLS.NOTIFICATION_PAGE} className="nav-item active">
+          <NavLink to={URLS.NOTIFICATION_PAGE} activeClassName="active" className="nav-item">
             Уведомления
-          </Link>
-          <Link to={URLS.SPOTS_PAGE} className="nav-item active">
+          </NavLink>
+          <NavLink to={URLS.SPOTS_PAGE} activeClassName="active" className="nav-item">
             Подписки
-          </Link>
-          <Link to={URLS.PROFILE_PAGE} className="nav-item active">
+          </NavLink>
+          <NavLink to={URLS.PROFILE_PAGE} activeClassName="active" className="nav-item">
             Профиль
-          </Link>
+          </NavLink>
         </div>
         <div className="main-nav">
-          <Link to={URLS.MAP_PAGE} className="nav-icon">
+          <NavLink to={URLS.MAP_PAGE} activeClassName="active" className="nav-icon">
             <Icon name="map" width={40} height={40} />
-          </Link>
+          </NavLink>
           <div className="nav-separator" />
-          <Link to={URLS.SERCH_PAGE} className="nav-icon">
+          <NavLink to={URLS.SERCH_PAGE} activeClassName="active" className="nav-icon">
             <Icon name="search" width={40} height={40} />
-          </Link>
+          </NavLink>
         </div>
       </nav>
     </div>
