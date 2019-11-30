@@ -73,6 +73,9 @@
                 .playerdata-rightpart
                 {
                     margin-left: auto;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-around;
                     .rightpart-item
                     {
                         height:65px;
@@ -81,6 +84,7 @@
                         align-items: center;
                         .icons
                         {
+                            margin-top: 10px;
                             display: flex;
                             .football-icon
                             {
