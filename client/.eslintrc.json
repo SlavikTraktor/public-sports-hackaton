@@ -8,9 +8,10 @@
   "env": {
     "browser": true
   },
-  "plugins": ["prefer-arrow", "react-hooks"],
+  "plugins": ["prefer-arrow", "react-hooks", "react"],
   "extends": ["eslint:recommended", "airbnb"],
   "rules": {
+    "react/prop-types": 0,
     "no-console": ["error", { "allow": ["warn", "error", "info"] }],
     "semi": "error",
     "import/prefer-default-export": "off",
@@ -33,16 +34,7 @@
       {
         "blankLine": "always",
         "prev": "*",
-        "next": [
-          "expression",
-          "return",
-          "block-like",
-          "break",
-          "continue",
-          "switch",
-          "try",
-          "throw"
-        ]
+        "next": ["expression", "return", "block-like", "break", "continue", "switch", "try", "throw"]
       }
     ],
     "multiline-comment-style": "error",
