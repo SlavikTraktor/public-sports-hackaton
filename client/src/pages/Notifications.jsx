@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Navigation } from '../common/components/Navigation';
 import { Notification } from '../common/components/Notification';
 
 export const Notifications = () => (
