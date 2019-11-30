@@ -1,0 +1,209 @@
+.userprofile-body {
+    font-family: 'Ubuntu', sans-serif;
+    background: $color-grey-2;
+    padding: 15px; 
+    margin-bottom: 10px; 
+    border-radius: 25px;
+    color:$profile-white-1;
+    .userprofile-topblock
+    {
+        display: flex;
+        .userprofile-leftblock
+        {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            flex-grow: 1;
+            .userprofile-avatar
+            {
+                margin: 5px;
+                width: 300px;
+                height: 300px;
+                border-radius: 15px;
+                background-image: url(/images/noava.jpg);
+                background-size: 100% 100%;
+            }
+            .userprofile-graybutton
+            {
+                margin: 5px;
+                width: 300px;
+                height: 55px;
+                background: $color-grey-3;
+                border-radius: 15px;
+                border-color:transparent;
+                .text
+                {
+                    width: 300px;
+                    font-size: 20px;
+                    color:$profile-white-1;
+                }
+                
+            }
+        }
+        .userprofile-rightblock
+        {
+            display: flex;
+            flex-flow: column nowrap;
+            flex-grow: 25;
+            .rightblock-Name
+            {
+                margin-top: 20px;
+                font-size: 34px;
+            }
+            .rightblock-playerid
+            {
+                font-size: 20px;
+                margin-top: 8px;
+            }
+            .rightblock-playerdata
+            {
+                margin-top: 25px;
+                display: flex;
+                justify-content: space-between;
+                .playerdata-leftpart
+                {
+                    .leftpart-item
+                    {
+                        height:65px;
+                        font-size: 24px;          
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                .playerdata-rightpart
+                {
+                    margin-left: auto;
+                    .rightpart-item
+                    {
+                        height:65px;
+                        font-size: 24px;
+                        text-align: right;
+                        align-items: center;
+                        .icons
+                        {
+                            display: flex;
+                            .football-icon
+                            {
+                                width: 30px;
+                                height: 30px;
+                                background-image: url('/icons/football-icon.svg');
+                                background-repeat: no-repeat;
+                                background-size: auto 100%;
+                                margin-left: auto;
+                            }
+                            .basketball-icon
+                            {
+                                margin-left: 10px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: url('/icons/basketball-icon.svg');
+                                background-repeat: no-repeat;
+                                background-size: auto 100%; 
+                            }
+                        }
+                    }
+                }
+            }
+            .rightblock-playerrating
+            {
+                display: flex;
+                flex-flow: column nowrap;
+                padding: 20px;
+                height: 60px;
+                background: $color-grey-3;
+                border-radius: 15px 15px 0px 0px;
+                .playerrating-title
+                {
+                    text-align: center;
+                }
+            }
+            .playerrating-blocks
+            {
+                display: flex;
+                .block
+                {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 50%;
+                    height: 60px;
+                    background: $profile-grey-1;
+                    border-radius: 0px 0px 15px 15px;
+                    position: relative;
+                    .dark-block
+                    {
+                        width: 50%;
+                        height: 60px;
+                        background: $progile-grey-2;
+                        border-radius: 0px 0px 15px 15px; 
+                    }
+                    .text
+                    {
+                        position: absolute;
+                        top:20px;
+                        right:5px;
+                        text-align: right;
+                        z-index: 5;
+                    }
+                    .football-icon
+                    {
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        background-image: url('/icons/football-icon.svg');
+                        background-repeat: no-repeat;
+                        background-size: auto 100%;
+                        margin-left: 10px;
+                        margin-top: 15px;
+                    }
+                    .basketball-icon
+                    {
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        background-image: url('/icons/basketball-icon.svg');
+                        background-repeat: no-repeat;
+                        background-size: auto 100%;
+                        margin-left: 10px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .userprofile-buttonsblock
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        .button
+        {
+            justify-content: center;
+            width: 150px;
+            height: 50px;
+            background: $profile-grey-3;
+            border-radius: 10px;
+            color:$color-grey-3;
+            display: flex;
+            margin-left: 10px;
+            align-items: center;
+            border-color:transparent;
+            .icon
+            {
+                width: 30px;
+                height: 30px;
+                background-image: url('/icons/pointer.svg');
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+            }
+            .icon2
+            {
+                width: 30px;
+                height: 30px;
+                background-image: url('/icons/user-icon.svg');
+                background-repeat: no-repeat;
+                background-size: auto 100%;
+            }
+        }
+    }
+  }
