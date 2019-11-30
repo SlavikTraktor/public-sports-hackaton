@@ -14,7 +14,7 @@ export const SearchItem = ({ user, spot }) => {
           </span>
         </div>
         <div className="flex-part interests">
-          <SportIcons sports={['football', 'basketball']} svgWidth={40} svgHeight={40} />
+          <SportIcons sports={['football', 'basketball']}/>
         </div>
         <div className="flex-part">
           <div className="arrow-icon">

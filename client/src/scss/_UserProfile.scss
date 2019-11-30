@@ -65,8 +65,17 @@
           margin: 5px 0;
           font-size: 16px;
           width: 100%;
+
           span {
             float: right;
+          }
+
+          .icons {
+            transform: scale(0.7);
+
+            svg {
+              margin: 0 5px;
+            }
           }
         }
       }
@@ -103,6 +112,7 @@
         }
       }
     }
+
     .rating {
       margin: 5px;
       width: 100%;
