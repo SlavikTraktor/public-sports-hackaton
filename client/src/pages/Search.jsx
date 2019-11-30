@@ -1,12 +1,15 @@
 import * as React from 'react';
+import margeClassNames from 'classnames';
 import { SearchItem } from '../common/components/SearchItem';
 import { Icon } from '../common/utils/Icon';
 
 export const Search = () => {
-  const onInputFocus = (e) => {
-    document.getElementById('result').classList.toggle('hidden');
+  const [isAnimated, setIsAnimated] = React.useState(false);
 
-    e.parentElement.classList.toggle('focus');
+  const onInputChange = () => {
+    if (!isAnimated) {
+      setIsAnimated(true);
+    }
   };
   const user = { id: '#00001', name: 'Ivan Ivanov', interests: ['football', 'basketball'] };
   const spot = {
@@ -16,20 +19,23 @@ export const Search = () => {
     count: 8,
   };
 
+  const inputWrapperClass = margeClassNames('input-wrapper', {
+    focus: isAnimated,
+  });
+
+  const searchResultClass = margeClassNames('search-result', {
+    hidden: !isAnimated,
+  });
+
   return (
     <div className="search-wrapper">
-      <div className="input-wrapper">
-        <input
-          type="text"
-          placeholder="Введите запрос"
-          onBlur={e => onInputFocus(e.target)}
-          onFocus={e => onInputFocus(e.target)}
-        />
+      <div className={inputWrapperClass}>
+        <input type="text" placeholder="Введите запрос" onChange={e => onInputChange(e.target)} />
         <button type="button">
           <Icon name="search" svgWidth={44} svgHeight={44} color="#FFF" />
         </button>
       </div>
-      <div id="result" className="search-result hidden">
+      <div id="result" className={searchResultClass}>
         <SearchItem spot={spot} />
         <SearchItem user={user} />
       </div>

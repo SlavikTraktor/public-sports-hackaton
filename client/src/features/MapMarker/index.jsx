@@ -1,5 +1,4 @@
 import * as React from 'react';
-
 import { Marker, Popup } from 'react-leaflet';
 import { Loader } from '../../common/components/Loader';
 import { activeIcon, defaultIcon } from './markerIcons';
