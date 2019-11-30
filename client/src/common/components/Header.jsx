@@ -20,11 +20,11 @@ export const Header = () => (
         </div>
         <div className="main-nav">
           <NavLink to={URLS.MAP_PAGE} activeClassName="active" className="nav-icon">
-            <Icon name="map" width={40} height={40} />
+            <Icon name="map" svgWidth={40} svgHeight={40} />
           </NavLink>
           <div className="nav-separator" />
           <NavLink to={URLS.SERCH_PAGE} activeClassName="active" className="nav-icon">
-            <Icon name="search" width={40} height={40} />
+            <Icon name="search" svgWidth={40} svgHeight={40} />
           </NavLink>
         </div>
       </nav>
