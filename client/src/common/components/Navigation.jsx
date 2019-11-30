@@ -1,28 +1,29 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Navigation = () => (
   <header>
     <div className="wrapper">
       <nav>
         <div className="main-nav">
-          <a href="/" className="nav-item active">
+          <Link to="/notifications" className="nav-item active">
             Уведомления
-          </a>
-          <a href="/" className="nav-item">
+          </Link>
+          <Link to="/spots" className="nav-item active">
             Подписки
-          </a>
-          <a href="/" className="nav-item">
+          </Link>
+          <Link to="/search" className="nav-item active">
             Профиль
-          </a>
+          </Link>
         </div>
         <div className="main-nav">
-          <a href="/" className="nav-map nav-icon">
+          <Link to="/map" className="nav-map nav-icon">
             &nbsp;
-          </a>
+          </Link>
           <div className="nav-separator" />
-          <a href="/" className="nav-search nav-icon">
+          <Link to="/profile" className="nav-search nav-icon">
             &nbsp;
-          </a>
+          </Link>
         </div>
       </nav>
     </div>
