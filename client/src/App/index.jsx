@@ -4,9 +4,7 @@ import { Header } from '../common/components/Header';
 import { MapPage } from '../pages/MapPage';
 import { Notifications } from '../pages/Notifications';
 
-import { Loader } from '../common/components/Loader';
-
-const Spots = () => <Loader />;
+const Spots = () => <div />;
 const Search = () => <div />;
 const Profile = () => <div />;
 
