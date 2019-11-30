@@ -1,0 +1,110 @@
+.spotspage-body {
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+  background: $color-grey-2;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  color: $profile-white-1;
+  .top-container {
+    .title-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 45px;
+      background: $color-grey-3;
+      border-radius: 15px 15px 0px 0px;
+      position: relative;
+      .text {
+        text-align: center;
+        font-size: 24px;
+      }
+      .id {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        text-align: right;
+        color: $spots-grey-1;
+      }
+    }
+    .main-block {
+      display: flex;
+      flex-direction: column;
+      background: $profile-grey-1;
+      border-radius: 0px 0px 15px 15px;
+      
+      .item {
+        font-size: 16px;
+        margin: 5px 0;
+        padding: 0 10px;
+
+        span {
+          float: right;
+        }
+
+        .icons{
+          transform: scale(0.7);
+
+          svg{
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}
+.bottom-containter {
+  margin-top: 25px;
+  .title {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 20px;
+    height: 60px;
+    background: $color-grey-3;
+    border-radius: 15px 15px 0px 0px;
+    .text {
+      text-align: center;
+    }
+  }
+  .blocks {
+    display: flex;
+    .block {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      height: 60px;
+      background: $profile-grey-1;
+      border-radius: 0px 0px 15px 15px;
+      .text {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+        color: #FFDF00;
+      }
+      .five-stars {
+        display: flex;
+        align-items: center;
+        .star-icon {
+          width: 20px;
+          height: 20px;
+          background-image: url('/icons/stars.svg');
+          background-repeat: no-repeat;
+          background-size: auto 100%;
+          margin: 0 2px;
+        }
+      }
+      .icon {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+
+        svg{
+          transform: scale(0.7);
+        }
+       }
+    }
+  }
+}

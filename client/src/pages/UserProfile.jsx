@@ -9,7 +9,12 @@ export const UserProfile = () => (
         <div className="userprofile-avatar" />
       </div>
       <div className="userprofile-rightblock">
-        <div className="rightblock-Name">Имя Фамилия <span><a href="vk.com/#id">vk.com/#id</a></span></div>
+        <div className="rightblock-Name">
+          Имя Фамилия{' '}
+          <span>
+            <a href="vk.com/#id">vk.com/#id</a>
+          </span>
+        </div>
         <div className="rightblock-playerid">id #000001</div>
         <div className="user-info">
           <div className="info-item">
@@ -22,8 +27,7 @@ export const UserProfile = () => (
             Интересы:
             <span>
               <div className="icons">
-                <div className="football-icon" />
-                <div className="basketball-icon" />
+                <SportIcons sports={['football', 'basketball']} />
               </div>
             </span>
           </div>
