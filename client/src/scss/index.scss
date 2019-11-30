@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 @import './variables';
 @import './reset';
 @import './utils';
 @import './App';
+@import './Header';
+@import './Notifications';
 @import './Notification';
 @import './UserProfile';
 
+@import './MapPage';
+
+@import './features/MapMarker';
+
+@import './common/components/Loader';

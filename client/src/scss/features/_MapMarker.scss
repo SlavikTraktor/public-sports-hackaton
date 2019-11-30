@@ -1,0 +1,72 @@
+.custom-map-marker {
+  .leaflet-popup-content-wrapper {
+    background-color: rgba($color-blue-0, 0.5);
+    min-width: 340px;
+    color: $color-grey-5;
+    border-radius: 28px;
+
+    .leaflet-popup-content {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      margin: 9px 15px;
+      width: 100%;
+
+      .popup-title {
+        background-color: rgba($color-grey-3, 0.9);
+        padding: 8px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+
+        .title-top {
+          display: flex;
+          justify-content: space-around;
+
+          h3 {
+            font-size: 20px;
+          }
+
+          .id {
+            font-size: 14px;
+            align-self: center;
+          }
+        }
+
+        .title-bot {
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+  
+      .popup-body {
+        background-color: rgba($color-grey-3, 0.75);
+        padding: 15px 5px 15px 5px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+
+        .popup-body-param {
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+  
+      .popup-footer {
+        align-self: center;
+        margin: 5px;
+        background-color: rgba($color-grey-3, 0.75);
+        padding: 8px;
+        max-width: 75%;
+        display: flex;
+        border-radius: 15px;
+
+        .popup-footer-icon {
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  .leaflet-popup-tip-container {
+    display: none;
+  }
+}
