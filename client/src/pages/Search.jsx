@@ -30,7 +30,12 @@ export const Search = () => {
   return (
     <div className="search-wrapper">
       <div className={inputWrapperClass}>
-        <input type="text" placeholder="Введите запрос" onChange={e => onInputChange(e.target)} />
+        <input
+          ref={input => input && input.focus()}
+          type="text"
+          placeholder="Введите запрос"
+          onChange={e => onInputChange(e.target)}
+        />
         <button type="button">
           <Icon name="search" svgWidth={44} svgHeight={44} color="#FFF" />
         </button>
