@@ -4,9 +4,9 @@ import { Header } from '../common/components/Header';
 import { Notifications } from '../pages/Notifications';
 import { MapPage } from '../pages/MapPage';
 import { Search } from '../pages/Search';
+import { UserProfile } from '../pages/UserProfile';
 
 const Spots = () => <div />;
-const Profile = () => <div />;
 
 export const App = () => (
   <Router>
@@ -16,7 +16,7 @@ export const App = () => (
       <Route path="/spots" component={Spots} />
       <Route path="/search" component={Search} />
       <Route path="/map" component={MapPage} />
-      <Route path="/profile" component={Profile} />
+      <Route path="/profile" component={UserProfile} />
     </Switch>
   </Router>
 );

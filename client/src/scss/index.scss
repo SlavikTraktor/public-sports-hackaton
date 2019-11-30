@@ -8,11 +8,14 @@
 @import './App';
 @import './Notifications';
 @import './Search';
+@import './UserProfile';
+@import './MapPage';
 
 @import './Header';
 @import './Notification';
 @import './MapPage';
 @import './SearchItem';
 
-
 @import './features/MapMarker';
+
+@import './common/components/Loader';
