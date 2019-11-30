@@ -1,16 +1,16 @@
 import * as React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Navigation } from '../common/components/Navigation';
+import { Header } from '../common/components/Header';
+import { MapPage } from '../pages/MapPage';
 import { Notifications } from '../pages/Notifications';
 import { Search } from '../pages/Search';
 
-const Spots = () => <div/>;
-const MapPage = () => <div/>;
-const Profile = () => <div/>;
+const Spots = () => <div />;
+const Profile = () => <div />;
 
 export const App = () => (
   <Router>
-    <Navigation />
+    <Header />
     <Switch>
       <Route path="/notifications" component={Notifications} />
       <Route path="/spots" component={Spots} />
