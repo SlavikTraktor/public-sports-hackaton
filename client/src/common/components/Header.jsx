@@ -1,27 +1,28 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import * as Consts from '../constants/constants';
 
 export const Header = () => (
   <header>
     <div className="wrapper">
       <nav>
         <div className="main-nav">
-          <Link to="/notifications" className="nav-item active">
+          <Link to={Consts.$NotificatinosLink} className="nav-item active">
             Уведомления
           </Link>
-          <Link to="/spots" className="nav-item active">
+          <Link to={Consts.$SpotsLink} className="nav-item active">
             Подписки
           </Link>
-          <Link to="/profile" className="nav-item active">
+          <Link to={Consts.$UserProfileLink} className="nav-item active">
             Профиль
           </Link>
         </div>
         <div className="main-nav">
-          <Link to="/map" className="nav-map nav-icon">
+          <Link to={Consts.$MapPageLink} className="nav-map nav-icon">
             &nbsp;
           </Link>
           <div className="nav-separator" />
-          <Link to="/profile" className="nav-search nav-icon">
+          <Link to={Consts.$SearchLink} className="nav-search nav-icon">
             &nbsp;
           </Link>
         </div>
