@@ -25,15 +25,23 @@ header {
     }
 
     .nav-icon {
-      margin: 0 20px;
+      margin: 0 15px;
       text-decoration: none;
-      padding: 5px;
+      padding: 5px 10px;
 
-      svg{
+      &.active {
+        background-color: $color-blue-3;
+        border-radius: 18px;
+      }
+
+      &.active svg path{
+        fill: $color-grey-3;
+      }
+
+      svg {
         transform: scale(0.8);
       }
     }
-
   }
 
   .nav-item {
