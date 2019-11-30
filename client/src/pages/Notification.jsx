@@ -17,9 +17,13 @@ export const Notification = () => (
             </a>
           </div>
           <div className="extra-nav">
-            <a href="/" className="nav-map nav-icon">&nbsp;</a>
+            <a href="/" className="nav-map nav-icon">
+              &nbsp;
+            </a>
             <div className="nav-separator" />
-            <a href="/" className="nav-search nav-icon">&nbsp;</a>
+            <a href="/" className="nav-search nav-icon">
+              &nbsp;
+            </a>
           </div>
         </nav>
       </div>

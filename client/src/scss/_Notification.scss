@@ -33,15 +33,14 @@ header {
       }
 
       .nav-icon {
-        // FIXME: сделать нормальный менеджер svg (пнг - минус качество и невозможно изменять цвет)
-        //также надо обернуть во враппер, чтобы потом реализовать нормальные ховер эффекты
-        transform: scale(0.8);
-        //
         margin: 0 20px;
-        width: 35px;
+        width: 30px;
+        text-decoration: none;
         background-repeat: no-repeat;
         background-size: auto 100%;
         padding: 18px 5px;
+        background-size: 100% auto;
+        background-position-y: center;
 
         &.nav-map {
           background-image: url('/icons/map-icon.svg');
