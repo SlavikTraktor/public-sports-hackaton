@@ -1,4 +1,5 @@
 .search-item-wrapper {
+  font-weight: 300;
   position: relative;
   display: flex;
   align-items: center;
@@ -25,6 +26,12 @@
   }
   svg{
     transform: scale(0.6);
+  }
+
+  &.interests{
+    svg{
+      transform: scale(0.9);
+    }
   }
 
   span{

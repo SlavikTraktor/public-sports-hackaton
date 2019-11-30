@@ -15,10 +15,15 @@ export const Notification = ({ name, date, text }) => (
       </div>
       <div className="notification-body">{text}</div>
     </div>
+<<<<<<< Updated upstream
     <div className="notification-icons">
       <div className="trash-icon">
         <Icon name="trashbox" />
       </div>
+=======
+    <div className="trash-icon">
+      <Icon name="trashbox" />
+>>>>>>> Stashed changes
     </div>
   </div>
 );

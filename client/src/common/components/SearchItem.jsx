@@ -14,7 +14,11 @@ export const SearchItem = ({ user, spot }) => {
           </span>
         </div>
         <div className="flex-part interests">
+<<<<<<< Updated upstream
           <SportIcons sports={['football', 'basketball']} />
+=======
+          <SportIcons sports={['football', 'basketball']} svgWidth={40} svgHeight={40} />
+>>>>>>> Stashed changes
         </div>
         <div className="flex-part">
           <div className="arrow-icon">

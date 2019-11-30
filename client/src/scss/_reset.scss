@@ -2,8 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+<<<<<<< Updated upstream
   font-family: 'Open Sans', sans-serif;
 }
+=======
+  font-family: 'Open Sans', sans-serif;}
+>>>>>>> Stashed changes
 
 html, body {
   min-height: 100%;
@@ -15,6 +19,7 @@ html, body {
   position: relative;
   display: flex;
   flex-direction: column;
+
 }
 
 body {

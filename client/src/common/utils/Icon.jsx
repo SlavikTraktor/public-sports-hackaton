@@ -7,26 +7,26 @@ import Trashbox from '../Icons/Trashbox';
 import Users from '../Icons/Users';
 
 export const Icon = ({
-  name, width, height, color,
+  name, svgWidth, svgHeight, color,
 }) => {
   switch (name) {
     case 'arrow':
-      return <Arrow width={width} height={height} color={color} />;
+      return <Arrow svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
 
     case 'map':
-      return <Map width={width} height={height} color={color} />;
+      return <Map svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
 
     case 'pointer':
-      return <Pointer width={width} height={height} color={color} />;
+      return <Pointer svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
 
     case 'search':
-      return <Search width={width} height={height} color={color} />;
+      return <Search svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
 
     case 'trashbox':
-      return <Trashbox width={width} height={height} color={color} />;
+      return <Trashbox svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
 
     case 'users':
-      return <Users width={width} height={height} color={color} />;
+      return <Users svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
 
     default:
       return null;
