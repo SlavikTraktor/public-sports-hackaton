@@ -12,7 +12,7 @@ export const Header = () => (
           <Link to="/spots" className="nav-item active">
             Подписки
           </Link>
-          <Link to="/search" className="nav-item active">
+          <Link to="/profile" className="nav-item active">
             Профиль
           </Link>
         </div>
