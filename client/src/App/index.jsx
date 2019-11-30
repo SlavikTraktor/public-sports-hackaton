@@ -2,9 +2,9 @@ import * as React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Navigation } from '../common/components/Navigation';
 import { Notifications } from '../pages/Notifications';
+import { Search } from '../pages/Search';
 
 const Spots = () => <div/>;
-const Search = () => <div/>;
 const MapPage = () => <div/>;
 const Profile = () => <div/>;
 

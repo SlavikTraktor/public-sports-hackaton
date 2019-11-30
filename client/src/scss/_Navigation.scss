@@ -22,13 +22,29 @@ header {
       height: 80%;
     }
 
+    .nav-icon-wrap {
+      padding: 15px 20px;
+      margin: 0 10px;
+      border-radius: 20px;
+
+      &.active{
+        background-color: $color-blue-3;
+      }
+
+      &.active .nav-map{
+        background-image: url('/icons/map-icon-active.svg');
+      }
+
+      &.active .nav-search{
+        background-image: url('/icons/search-icon-active.svg');
+      }
+    }
+
     .nav-icon {
-      margin: 0 20px;
-      width: 30px;
       text-decoration: none;
       background-repeat: no-repeat;
       background-size: auto 100%;
-      padding: 18px 5px;
+      padding: 18px 10px;
       background-size: 100% auto;
       background-position-y: center;
 
@@ -39,6 +55,8 @@ header {
       &.nav-search {
         background-image: url('/icons/search-icon.svg');
       }
+
+      
     }
   }
 
@@ -58,9 +76,12 @@ header {
       margin-right: 0;
     }
 
-    &.active {
+    &.active{
       background-color: $color-blue-3;
       color: $color-grey-3;
     }
   }
+
+ 
+
 }

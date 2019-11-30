@@ -9,21 +9,25 @@ export const Navigation = () => (
           <Link to="/notifications" className="nav-item active">
             Уведомления
           </Link>
-          <Link to="/spots" className="nav-item active">
+          <Link to="/spots" className="nav-item">
             Подписки
           </Link>
-          <Link to="/search" className="nav-item active">
+          <Link to="/search" className="nav-item">
             Профиль
           </Link>
         </div>
         <div className="main-nav">
-          <Link to="/map" className="nav-map nav-icon">
-            &nbsp;
-          </Link>
+          <div className="nav-icon-wrap">
+            <Link to="/map" className="nav-map nav-icon">
+              &nbsp;
+            </Link>
+          </div>
           <div className="nav-separator" />
-          <Link to="/profile" className="nav-search nav-icon">
-            &nbsp;
-          </Link>
+          <div className="nav-icon-wrap">
+            <Link to="/profile" className="nav-search nav-icon">
+              &nbsp;
+            </Link>
+          </div>
         </div>
       </nav>
     </div>

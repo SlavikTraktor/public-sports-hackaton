@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { Notification } from '../common/components/Notification';
 
-export const Notifications = () => (
+export const Search = () => (
   <div className="notification-page">
     <div className="wrapper">
       <aside className="select-type">
