@@ -24,7 +24,7 @@ export const Header = () => (
           </Link>
           <div className="nav-separator" />
           <Link to={Consts.$SearchLink} className="nav-icon">
-             <Icon name="search" width={40} height={40} />
+            <Icon name="search" width={40} height={40} />
           </Link>
         </div>
       </nav>
