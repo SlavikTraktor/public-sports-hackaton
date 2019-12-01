@@ -15,7 +15,7 @@ export const mockСommercialSpotParams = {
   name: '*Spot Name*',
   id: 'id #000001',
   object: 'Школа №525',
-  commercial: 'бесплатно',
+  commercial: 'платно',
   adress: 'Санкт-Петербург, ул. Гагарина, 24к1',
   sports: ['football', 'basketball'],
   rating: {

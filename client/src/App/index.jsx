@@ -9,6 +9,7 @@ import { Search } from '../pages/Search';
 import { UserProfile } from '../pages/UserProfile';
 import { SpotList } from '../pages/SpotList';
 import { URLS } from '../common/constants/constants';
+import { Spot } from '../pages/Spot';
 
 export const App = () => (
   <Router>
