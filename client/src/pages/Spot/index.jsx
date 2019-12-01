@@ -79,6 +79,11 @@ export const Spot = ({ location }) => {
         </div>
       )}
       {isModal && <ArendaModal toggleModal={() => setIsModal(false)} />}
+      <div className="buttons top">
+        <button className="button" type="button">Подписчики</button>
+        <button className="button" type="button">Сейчас играют</button>
+        <button className="button" type="button">Подписаться</button>
+      </div>
       <div className="bottom-containter">
         <div className="title">
           <div className="text">Рейтинг площадки</div>

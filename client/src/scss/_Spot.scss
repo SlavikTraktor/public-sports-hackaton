@@ -86,14 +86,12 @@
   }
 
   .administrator-phone {
-    margin-left:  auto;
+    margin-left: auto;
     text-align: right;
   }
 }
 
 .bottom-containter {
-  margin-top: 25px;
-
   .title {
     display: flex;
     flex-flow: column nowrap;
@@ -195,8 +193,18 @@
       box-shadow: 0 2px 5px $color-grey-1;
     }
 
-    span{
+    span {
       font-size: 200%;
+    }
+  }
+
+  &.top {
+
+    justify-content: center;
+    
+    button {
+      background-color: $color-grey-3;
+      color: $color-grey-5;
     }
   }
 }
