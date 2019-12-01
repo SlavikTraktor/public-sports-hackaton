@@ -17,7 +17,7 @@ export const MapMarker = ({ position, id }) => {
     setIcon(activeIcon);
 
     setTimeout(() => {
-      setSpotData(mockData);
+      setSpotData(mockData[id - 1]);
 
       setIsLoader(false);
     }, 500);
@@ -56,7 +56,7 @@ export const MapMarker = ({ position, id }) => {
         <div className="popup-body">
           {spotData.paramsList.map((v, i) => (
             <div key={i.toString()} className="popup-body-param">
-              {v === 'Бесплатно' && id === '2' ? 'Платно' : v}
+              {v}
             </div>
           ))}
         </div>
