@@ -44,15 +44,15 @@ export const MapMarker = ({ position, id }) => {
         onClose={onPopupClose}
         className="custom-map-marker"
       >
-        <div className="popup-title">
-          <div className="title-top">
-            <NavLink className="spot-name" to={URLS.SPOT_PROFILE.replace(':id', id)}>
-              {spotData.title}
-            </NavLink>
-            <div className="spot-id">{spotData.id}</div>
+        <NavLink to={URLS.SPOT_PROFILE.replace(':id', id)}>
+          <div className="popup-title">
+            <div className="title-top">
+              <div className="spot-name">{spotData.title}</div>
+              <div className="spot-id">{spotData.id}</div>
+            </div>
+            <div className="title-bot">{spotData.adress}</div>
           </div>
-          <div className="title-bot">{spotData.adress}</div>
-        </div>
+        </NavLink>
         <div className="popup-body">
           {spotData.paramsList.map((v, i) => (
             <div key={i.toString()} className="popup-body-param">

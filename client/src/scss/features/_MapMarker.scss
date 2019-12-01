@@ -24,19 +24,20 @@
 
           .spot-name {
             font-size: 20px;
-            text-decoration: none;
-            color: inherit;
+            color: $color-grey-5;
           }
 
           .spot-id {
             font-size: 14px;
             align-self: center;
+            color: $color-grey-5;
           }
         }
 
         .title-bot {
           font-size: 12px;
           text-align: center;
+          color: $color-grey-5;
         }
       }
   
