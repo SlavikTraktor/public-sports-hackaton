@@ -1,8 +1,8 @@
 export const mockSpotParams = {
-  name: '*Spot Name*',
+  name: 'Площадка у школы 525',
   id: 'id #000001',
   object: 'Школа №525',
-  adress: 'Санкт-Петербург, ул. Гагарина, 24к1',
+  adress: 'Санкт-Петербург, ул. Гагарина, 14к1',
   commercial: 'бесплатно',
   sports: ['football', 'basketball'],
   rating: {
@@ -13,11 +13,11 @@ export const mockSpotParams = {
 };
 
 export const mockСommercialSpotParams = {
-  name: '*Spot Name*',
-  id: 'id #000001',
-  object: 'Школа №525',
+  name: 'Площадка "Гранд Спорт"',
+  id: 'id #000002',
+  object: 'Площадка "Гранд Спорт"',
   commercial: 'платно',
-  adress: 'Санкт-Петербург, ул. Гагарина, 24к1',
+  adress: 'Санкт-Петербург,Московский р-н, пр. Космонавтов, 24к2',
   sports: ['football', 'basketball'],
   rating: {
     football: 4.5,

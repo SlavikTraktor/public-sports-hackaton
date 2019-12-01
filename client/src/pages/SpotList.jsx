@@ -4,23 +4,24 @@ import { SpotListItem } from '../common/components/SpotListItem';
 export const SpotList = () => {
   const spot1 = {
     id: 1,
-    name: 'spot name',
-    address: 'Московский р-н, пр. Юрия Гагарина,22к4',
+    name: 'Площадка у школы 525',
+    address: 'Санкт-Петербург, ул. Гагарина, 14к1',
     sports: ['football', 'valleyball', 'basketball', 'workout'],
   };
 
   const spot2 = {
     id: 2,
-    name: 'spot name',
-    address: 'Невский р-н, пр. Большевиков, 20',
-    sports: ['football', 'workout'],
+
+    name: 'Площадка "Гранд Спорт"',
+    address: 'Московский р-н, пр. Космонавтов, 24к2',
+    sports: ['football', 'basketball', 'workout'],
   };
 
   const spot3 = {
     id: 3,
-    name: 'spot name',
-    address: 'Московский р-н, пр. Космонавтов, 24к2',
-    sports: ['football', 'basketball', 'workout'],
+    name: 'Площадка на Большевиков 20',
+    address: 'Невский р-н, пр. Большевиков, 20',
+    sports: ['football', 'workout'],
   };
 
   return (

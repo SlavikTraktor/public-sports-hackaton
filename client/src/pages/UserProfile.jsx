@@ -11,16 +11,16 @@ export const UserProfile = () => (
       </div>
       <div className="userprofile-rightblock">
         <div className="rightblock-Name">
-          Имя Фамилия
+          Вахтанг Руссия
           <span>
-            <a href="vk.com/#id">vk.com/#id</a>
+            <a href="https://vk.com/vatulya">vk.com/vatulya</a>
           </span>
         </div>
-        <div className="rightblock-playerid">id #000001</div>
+        <div className="rightblock-playerid">id #01337</div>
         <div className="user-info">
           <div className="info-item">
             День рождения:
-            <span>01 января 1970</span>
+            <span>24 Июля 1998</span>
           </div>
           <div className="info-item">
             Город:
@@ -54,7 +54,7 @@ export const UserProfile = () => (
             <div className="rating-icon">
               <SportIcons sports={['football']} color="#414b50" />
             </div>
-            <div className="text">550</div>
+            <div className="text">500</div>
           </div>
           <div className="block">
             <div className="dark-block" />
