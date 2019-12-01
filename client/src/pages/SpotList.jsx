@@ -15,6 +15,7 @@ export const SpotList = () => {
     name: 'Площадка "Гранд Спорт"',
     address: 'Московский р-н, пр. Космонавтов, 24к2',
     sports: ['football', 'basketball', 'workout'],
+    count: 13,
   };
 
   const spot3 = {
@@ -22,6 +23,7 @@ export const SpotList = () => {
     name: 'Площадка на Большевиков 20',
     address: 'Невский р-н, пр. Большевиков, 20',
     sports: ['football', 'workout'],
+    count: 23,
   };
 
   return (
