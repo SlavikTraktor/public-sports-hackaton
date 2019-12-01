@@ -3,6 +3,15 @@ import { SportIcons } from '../common/utils/SportIcons';
 import { Icon } from '../common/utils/Icon';
 import { CommentArea } from '../common/components/CommentArea';
 
+const posts = [
+  {
+    name: 'Вахтанг Руссия',
+    date: '2019-11-30T02:11:23+03:00',
+    text: 'Отличный день, чтобы победить на хакатоне! :)',
+    likes: 12,
+  },
+];
+
 export const UserProfile = () => (
   <div className="userprofile-body">
     <div className="userprofile-topblock">
@@ -77,6 +86,6 @@ export const UserProfile = () => (
         <span>Мои друзья</span>
       </button>
     </div>
-    <CommentArea />
+    <CommentArea comments={posts} />
   </div>
 );

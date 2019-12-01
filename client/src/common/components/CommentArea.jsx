@@ -1,4 +1,5 @@
 import * as React from 'react';
+import moment from 'moment';
 import { Icon } from '../utils/Icon';
 
 export const CommentArea = (props) => {
@@ -13,7 +14,7 @@ export const CommentArea = (props) => {
             <div className="comment-header">
               <h3 className="title">
                 {name}
-                <div>{date}</div>
+                <div>{moment(date).format('MMMM Do, hh:mm')}</div>
               </h3>
             </div>
             <div className="comment-body">{text}</div>
