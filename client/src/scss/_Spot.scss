@@ -96,16 +96,13 @@
       }
 
       .five-stars {
+        width: 160px;
         display: flex;
         align-items: center;
+        justify-content: center;
 
-        .star-icon {
-          width: 20px;
-          height: 20px;
-          background-image: url('/icons/stars.svg');
-          background-repeat: no-repeat;
-          background-size: auto 100%;
-          margin: 0 2px;
+        svg{
+          transform: scale(0.6);
         }
       }
 

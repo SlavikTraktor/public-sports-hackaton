@@ -60,11 +60,7 @@ export const MapMarker = ({ position, id }) => {
           ))}
         </div>
         <div className="popup-footer">
-          {spotData.paramsList.map((_, i) => (
-            <div key={i.toString()} className="popup-footer-icon">
-              O
-            </div>
-          ))}
+          <SportIcons sports={spotData.sportTypes} />
         </div>
       </Popup>
     </Marker>
