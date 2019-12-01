@@ -89,6 +89,24 @@ export const Spot = ({ location }) => {
           ))}
         </div>
       </div>
+      <div className="buttons">
+        <div className="buttons">
+          <button type="button">
+            <span>&#128400;</span>
+            Я здесь!
+          </button>
+          <button type="button">
+            <span>&#127939;&#127995;</span>
+            Буду здесь!
+          </button>
+        </div>
+        {spotParams.commercial !== 'платно' && (
+          <button type="button">
+            <span>&#128176;</span>
+            Помочь площадке
+          </button>
+        )}
+      </div>
       <Carousel photos={spotParams.photos} />
       <CommentArea />
     </div>

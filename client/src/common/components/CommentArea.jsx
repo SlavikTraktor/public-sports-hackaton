@@ -32,10 +32,10 @@ export const CommentArea = (props) => {
 
     return (
       <div className="placeholder">
-        Здесь еще нет записей
+        Здесь еще нет записей&nbsp;
         <span>&#128532;</span>
         <br />
-        Создайте первую запись
+        Создайте первую запись&nbsp;
         <span>&#128523;</span>
       </div>
     );
