@@ -7,6 +7,9 @@ export const Header = () => (
   <header>
     <div className="wrapper">
       <nav>
+        <div>
+          <img src="/images/logo.png" height={60} alt="" />
+        </div>
         <div className="main-nav">
           <NavLink to={URLS.NOTIFICATION_PAGE} activeClassName="active" className="nav-item">
             Уведомления
@@ -18,6 +21,7 @@ export const Header = () => (
             Профиль
           </NavLink>
         </div>
+
         <div className="main-nav">
           <NavLink to={URLS.MAP_PAGE} activeClassName="active" className="nav-icon">
             <Icon name="map" svgWidth={40} svgHeight={40} />
