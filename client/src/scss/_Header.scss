@@ -55,6 +55,9 @@ header {
     text-decoration: none;
     transition: 0.2s;
     border-radius: 25px;
+    &:hover{
+      background-color: darken($color-blue-3, 85%);;
+    }
 
     &:last-child {
       margin-right: 0;
