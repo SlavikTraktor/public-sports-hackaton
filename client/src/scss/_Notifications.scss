@@ -30,5 +30,8 @@ aside.select-type {
       background-color: $color-blue-3;
       color: $color-grey-3;
     }
+    &:hover{
+      background-color: darken($color-blue-3, 85%);;
+    }
   }
 }
