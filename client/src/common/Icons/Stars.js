@@ -1,7 +1,8 @@
 import React from 'react';
 
 const SvgStars = ({ svgWidth, svgHeight, color }) => (
-  <svg width={svgWidth || 207} height={svgHeight || 35}>
+  <svg width={svgWidth || 35} height={svgHeight || 35}>
+    {/* eslint-disable-next-line react/no-unknown-property */}
     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
       <g
         id="Spot-Page"

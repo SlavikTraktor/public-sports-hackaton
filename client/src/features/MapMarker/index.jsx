@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { Marker, Popup } from 'react-leaflet';
+import { NavLink } from 'react-router-dom';
 import { Loader } from '../../common/components/Loader';
 import { activeIcon, defaultIcon } from './markerIcons';
 import { mockData } from './mockData';
+import { URLS } from '../../common/constants/constants';
 import { SportIcons } from '../../common/utils/SportIcons';
 
 // eslint-disable-next-line no-unused-vars
@@ -44,8 +46,10 @@ export const MapMarker = ({ position, id }) => {
       >
         <div className="popup-title">
           <div className="title-top">
-            <h3>{spotData.title}</h3>
-            <div className="id">{spotData.id}</div>
+            <NavLink className="spot-name" to={URLS.SPOT_PROFILE.replace(':id', id)}>
+              {spotData.title}
+            </NavLink>
+            <div className="spot-id">{spotData.id}</div>
           </div>
           <div className="title-bot">{spotData.adress}</div>
         </div>

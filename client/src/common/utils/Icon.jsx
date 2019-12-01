@@ -9,7 +9,9 @@ import User from '../Icons/User';
 import Create from '../Icons/Create';
 import Star from '../Icons/Stars';
 
-export const Icon = ({ name, svgWidth, svgHeight, color }) => {
+export const Icon = ({
+  name, svgWidth, svgHeight, color,
+}) => {
   switch (name) {
     case 'arrow':
       return <Arrow svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
