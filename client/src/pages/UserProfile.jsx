@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { SportIcons } from '../common/utils/SportIcons';
 import { Icon } from '../common/utils/Icon';
+import { CommentArea } from '../common/components/CommentArea';
 
 export const UserProfile = () => (
   <div className="userprofile-body">
@@ -10,7 +11,7 @@ export const UserProfile = () => (
       </div>
       <div className="userprofile-rightblock">
         <div className="rightblock-Name">
-          Имя Фамилия{' '}
+          Имя Фамилия
           <span>
             <a href="vk.com/#id">vk.com/#id</a>
           </span>
@@ -67,12 +68,13 @@ export const UserProfile = () => (
     <div className="userprofile-buttonsblock">
       <button type="button" className="button">
         <Icon name="pointer" color="#414b50" />
-        <span>мои места</span>
+        <span>Мои места</span>
       </button>
       <button type="button" className="button">
-        <Icon name="users" color="#414b50" />
-        <span>мои друзья</span>
+        <Icon name="user" color="#414b50" />
+        <span>Мои друзья</span>
       </button>
     </div>
+    <CommentArea />
   </div>
 );

@@ -35,7 +35,7 @@ export const Spot = () => (
       <div className="blocks">
         <div className="block">
           <div className="icon">
-            <SportIcons sports={['football']} />
+            <SportIcons sports={['football']} color="#414b50" />
           </div>
           <div className="five-stars">
             <div className="star-icon" />
@@ -48,7 +48,7 @@ export const Spot = () => (
         </div>
         <div className="block">
           <div className="icon">
-            <SportIcons sports={['basketball']} />
+            <SportIcons sports={['basketball']} color="#414b50" />
           </div>
           <div className="five-stars">
             <div className="star-icon" />
