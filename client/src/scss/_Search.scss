@@ -41,6 +41,9 @@
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#a1c4fd), to(#c2e9fb));
     padding: 0 10px;
     font-size: 100%;
+    &:focus{
+      box-shadow: 0 0 5px $color-grey-2 inset;
+    }
   }
 
   button {
