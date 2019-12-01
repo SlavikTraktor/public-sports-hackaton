@@ -72,7 +72,7 @@ export const Spot = ({ location }) => {
             <FiveStarsReview raiting={spotParams.rating[v]} sport={v} onChoose={() => {}} />
           ))}
         </div>
-            <CommentArea />
+        <CommentArea />
       </div>
     </div>
   );
