@@ -3,5 +3,5 @@ export const mockData = {
   id: 'id#0001',
   adress: 'школа №525',
   paramsList: ['На площадке 20 человек', 'Бесплатно', 'Есть освещение', 'Открыто круглосуточно'],
-  sportTypes: ['workout', 'football', 'basketball', 'volleyball'],
+  sportTypes: ['workout', 'football', 'basketball', 'valleyball'],
 };
