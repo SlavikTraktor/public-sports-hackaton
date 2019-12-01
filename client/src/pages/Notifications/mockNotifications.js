@@ -2,7 +2,7 @@ export const mockNotifications = [
   {
     type: 'user',
     name: 'author',
-    text: 'Площадка закрыта на ремонт',
+    text: 'Отлично провел время сегодня!',
     date: '2019-11-30T13:17:23+03:00',
   },
   {
@@ -14,7 +14,7 @@ export const mockNotifications = [
   {
     type: 'other',
     name: 'author',
-    text: 'Площадка сгорела',
+    text: 'Обновление 2.0 уже скоро!',
     date: '2019-10-30T02:11:23+03:00',
   },
 ];

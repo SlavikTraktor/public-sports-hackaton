@@ -1,11 +1,13 @@
 import * as React from 'react';
 import { matchPath } from 'react-router-dom';
+import { Carousel } from '../../common/components/Carousel';
 import { FiveStarsReview } from '../../features/FiveStarsReview';
 import { SportIcons } from '../../common/utils/SportIcons';
 import { URLS } from '../../common/constants/constants';
 import { Loader } from '../../common/components/Loader';
 import { mockSpotParams, mockСommercialSpotParams } from './mockSpotParams';
 import { ArendaModal } from '../../features/ArendaModal';
+import { CommentArea } from '../../common/components/CommentArea';
 
 export const Spot = ({ location }) => {
   const [isLoader, setIsLoader] = React.useState(true);
@@ -87,6 +89,8 @@ export const Spot = ({ location }) => {
           ))}
         </div>
       </div>
+      <Carousel photos={spotParams.photos}/>
+      <CommentArea />
     </div>
   );
 };

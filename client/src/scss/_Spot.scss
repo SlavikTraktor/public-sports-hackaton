@@ -8,7 +8,7 @@
   margin-bottom: 10px;
   border-radius: 25px;
   color: $profile-white-1;
-  min-height: 250px;
+  height: fit-content;
 
   .top-container {
     .title-block {
@@ -131,7 +131,7 @@
         align-items: center;
         justify-content: center;
 
-        svg{
+        svg {
           transform: scale(0.6);
         }
       }
@@ -148,4 +148,25 @@
       }
     }
   }
+}
+.slider{
+  margin: 20px auto 0 auto;
+  width: 97%;
+
+}
+.slider-item{
+margin: 0 10px;
+overflow: hidden;
+  img{
+    margin: 0 10px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.slick-dots{
+  color: $color-grey-3;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $profile-grey-1;
 }

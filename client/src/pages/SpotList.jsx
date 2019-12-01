@@ -1,30 +1,36 @@
 import * as React from 'react';
-import { SportIcons } from '../common/utils/SportIcons';
-import { Icon } from '../common/utils/Icon';
+import { SpotListItem } from '../common/components/SpotListItem';
 
-export const SpotList = () => (
-  <div className="spotlistblock">
-    <div className="header">
-      <div className="title">
-      Площадка *name*
-      </div>
-      <div className="id">
-      id#000001
-      </div>
+export const SpotList = () => {
+  const spot1 = {
+    id: 1,
+    name: 'spot name',
+    address: 'Московский р-н, пр. Юрия Гагарина,22к4',
+    sports: ['football', 'valleyball', 'basketball', 'workout'],
+  };
+
+  const spot2 = {
+    id: 2,
+    name: 'spot name',
+    address: 'Невский р-н, пр. Большевиков, 20',
+    sports: ['football', 'workout'],
+  };
+
+  const spot3 = {
+    id: 3,
+    name: 'spot name',
+    address: 'Московский р-н, пр. Космонавтов, 24к2',
+    sports: ['football', 'basketball', 'workout'],
+  };
+
+  return (
+    <div className="spotList">
+      <SpotListItem spot={spot1} />
+      <SpotListItem spot={spot2} />
+      <SpotListItem spot={spot3} />
+      <SpotListItem spot={spot1} />
+      <SpotListItem spot={spot2} />
+      <SpotListItem spot={spot3} />
     </div>
-    <div className="body">
-      <div className="line">
-        <Icon name="pointer" color="#414b50" />
-        <div className="text">
-        Московский р-н, пр. Юрия Гагарина,
-          <br />
-        22к4
-        </div>
-      </div>
-      <div className="icon-panel">
-        <SportIcons sports={['football', 'basketball']} color="#ffffff" />
-        <SportIcons sports={['valleyball', 'workout']} color="#ffffff" />
-      </div>
-    </div>
-  </div>
-);
+  );
+};
