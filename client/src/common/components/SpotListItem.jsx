@@ -4,7 +4,7 @@ import { SportIcons } from '../utils/SportIcons';
 
 export const SpotListItem = ({ spot }) => {
   const {
-    name, id, address, sports,
+    name, id, address, sports, count,
   } = spot;
 
   return (
@@ -16,6 +16,10 @@ export const SpotListItem = ({ spot }) => {
         </div>
       </a>
       <div className="body">
+        <div className="line">
+          <Icon name="users" svgWidth={45} color="#414b50" />
+          <div className="text">{"Человек на площадке: " + count}</div>
+        </div>
         <div className="line">
           <Icon name="pointer" svgWidth={38} color="#414b50" />
           <div className="text">{address}</div>

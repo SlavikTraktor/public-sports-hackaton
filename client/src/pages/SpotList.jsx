@@ -7,6 +7,7 @@ export const SpotList = () => {
     name: 'spot name',
     address: 'Московский р-н, пр. Юрия Гагарина,22к4',
     sports: ['football', 'valleyball', 'basketball', 'workout'],
+    count: 18,
   };
 
   const spot2 = {
@@ -14,6 +15,7 @@ export const SpotList = () => {
     name: 'spot name',
     address: 'Невский р-н, пр. Большевиков, 20',
     sports: ['football', 'workout'],
+    count: 12,
   };
 
   const spot3 = {
@@ -21,6 +23,7 @@ export const SpotList = () => {
     name: 'spot name',
     address: 'Московский р-н, пр. Космонавтов, 24к2',
     sports: ['football', 'basketball', 'workout'],
+    count: 23,
   };
 
   return (
