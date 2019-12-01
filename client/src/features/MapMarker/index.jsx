@@ -56,7 +56,7 @@ export const MapMarker = ({ position, id }) => {
         <div className="popup-body">
           {spotData.paramsList.map((v, i) => (
             <div key={i.toString()} className="popup-body-param">
-              {v}
+              {v === 'Бесплатно' && id === '2' ? 'Платно' : v}
             </div>
           ))}
         </div>

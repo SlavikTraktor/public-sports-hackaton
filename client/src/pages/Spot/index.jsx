@@ -89,7 +89,7 @@ export const Spot = ({ location }) => {
           ))}
         </div>
       </div>
-      <Carousel photos={spotParams.photos}/>
+      <Carousel photos={spotParams.photos} />
       <CommentArea />
     </div>
   );
