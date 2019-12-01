@@ -27,7 +27,7 @@ export const CommentArea = props => {
         </div>
       ));
     } else {
-      return <div class="placeholder">У Вас пока нет записей <span>&#128532;</span> <br/>Создайте свою первую запись <span>&#128523;</span></div>;
+      return <div class="placeholder">Здесь еще нет записей <span>&#128532;</span> <br/>Создайте первую запись <span>&#128523;</span></div>;
     }
   };
 
