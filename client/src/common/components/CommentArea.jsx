@@ -1,9 +1,9 @@
 import * as React from 'react';
-import moment from 'moment';
 import { Icon } from '../utils/Icon';
 
 export const CommentArea = (props) => {
   const renderComments = () => {
+    // eslint-disable-next-line react/destructuring-assignment
     if (props.comments) {
       return props.comments.map(({
         name, date, text, likes,
@@ -32,10 +32,10 @@ export const CommentArea = (props) => {
 
     return (
       <div className="placeholder">
-          Здесь еще нет записей
+        Здесь еще нет записей
         <span>&#128532;</span>
         <br />
-          Создайте первую запись
+        Создайте первую запись
         <span>&#128523;</span>
       </div>
     );
