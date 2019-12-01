@@ -5,6 +5,7 @@ import { SportIcons } from '../../common/utils/SportIcons';
 import { URLS } from '../../common/constants/constants';
 import { Loader } from '../../common/components/Loader';
 import { mockSpotParams, mockСommercialSpotParams } from './mockSpotParams';
+import { CommentArea } from '../../common/components/CommentArea';
 
 export const Spot = ({ location }) => {
   const [isLoader, setIsLoader] = React.useState(true);
@@ -71,6 +72,7 @@ export const Spot = ({ location }) => {
             <FiveStarsReview raiting={spotParams.rating[v]} sport={v} onChoose={() => {}} />
           ))}
         </div>
+            <CommentArea />
       </div>
     </div>
   );
