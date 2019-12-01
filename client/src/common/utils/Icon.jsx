@@ -5,10 +5,10 @@ import Pointer from '../Icons/Pointer';
 import Search from '../Icons/Search';
 import Trashbox from '../Icons/Trashbox';
 import Users from '../Icons/Users';
+import User from '../Icons/User';
+import Create from '../Icons/Create';
 
-export const Icon = ({
-  name, svgWidth, svgHeight, color,
-}) => {
+export const Icon = ({ name, svgWidth, svgHeight, color }) => {
   switch (name) {
     case 'arrow':
       return <Arrow svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
@@ -27,6 +27,12 @@ export const Icon = ({
 
     case 'users':
       return <Users svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
+
+    case 'user':
+      return <User svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
+
+    case 'create':
+      return <Create svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
 
     default:
       return null;
