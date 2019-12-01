@@ -7,11 +7,11 @@ export const SpotList = () => {
     name: 'Площадка у школы 525',
     address: 'Санкт-Петербург, ул. Гагарина, 14к1',
     sports: ['football', 'valleyball', 'basketball', 'workout'],
+    count: 18,
   };
 
   const spot2 = {
     id: 2,
-
     name: 'Площадка "Гранд Спорт"',
     address: 'Московский р-н, пр. Космонавтов, 24к2',
     sports: ['football', 'basketball', 'workout'],

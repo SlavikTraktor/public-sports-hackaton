@@ -6,10 +6,12 @@ import { SportIcons } from '../../common/utils/SportIcons';
 import { URLS } from '../../common/constants/constants';
 import { Loader } from '../../common/components/Loader';
 import { mockSpotParams, mockСommercialSpotParams } from './mockSpotParams';
+import { ArendaModal } from '../../features/ArendaModal';
 import { CommentArea } from '../../common/components/CommentArea';
 
 export const Spot = ({ location }) => {
   const [isLoader, setIsLoader] = React.useState(true);
+  const [isModal, setIsModal] = React.useState(false);
   const [spotParams, setSpotParams] = React.useState({});
 
   const { id } = matchPath(location.pathname, {
@@ -64,6 +66,19 @@ export const Spot = ({ location }) => {
           </div>
         </div>
       </div>
+      {spotParams.commercial === 'платно' && (
+        <div className="arenda-params">
+          <button className="open-arenda-modal" type="button" onClick={() => setIsModal(true)}>
+            Арендовать
+          </button>
+          <div className="administrator-phone">
+            Телефон администратора:
+            <br />
+            +79119199191
+          </div>
+        </div>
+      )}
+      {isModal && <ArendaModal toggleModal={() => setIsModal(false)} />}
       <div className="bottom-containter">
         <div className="title">
           <div className="text">Рейтинг площадки</div>
@@ -74,7 +89,25 @@ export const Spot = ({ location }) => {
           ))}
         </div>
       </div>
-      <Carousel photos={spotParams.photos}/>
+      <div className="buttons">
+        <div className="buttons">
+          <button type="button">
+            <span>&#128400;</span>
+            Я здесь!
+          </button>
+          <button type="button">
+            <span>&#127939;&#127995;</span>
+            Буду здесь!
+          </button>
+        </div>
+        {spotParams.commercial !== 'платно' && (
+          <button type="button">
+            <span>&#128176;</span>
+            Помочь площадке
+          </button>
+        )}
+      </div>
+      <Carousel photos={spotParams.photos} />
       <CommentArea />
     </div>
   );
