@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { matchPath } from 'react-router-dom';
+import { Carousel } from '../../common/components/Carousel';
 import { FiveStarsReview } from '../../features/FiveStarsReview';
 import { SportIcons } from '../../common/utils/SportIcons';
 import { URLS } from '../../common/constants/constants';
@@ -72,8 +73,9 @@ export const Spot = ({ location }) => {
             <FiveStarsReview raiting={spotParams.rating[v]} sport={v} onChoose={() => {}} />
           ))}
         </div>
-        <CommentArea />
       </div>
+      <Carousel photos={spotParams.photos}/>
+      <CommentArea />
     </div>
   );
 };

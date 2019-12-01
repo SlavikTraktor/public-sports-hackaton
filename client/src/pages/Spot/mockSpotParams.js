@@ -9,6 +9,7 @@ export const mockSpotParams = {
     football: 4.5,
     basketball: 3.2,
   },
+  photos: [2, 3, 5, 6],
 };
 
 export const mockСommercialSpotParams = {
@@ -22,4 +23,5 @@ export const mockСommercialSpotParams = {
     football: 4.5,
     basketball: 3.2,
   },
+  photos: [1, 2, 4, 7, 8],
 };
