@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useDispatch } from 'react-redux';
 import { matchPath } from 'react-router-dom';
 import { Carousel } from '../../common/components/Carousel';
 import { FiveStarsReview } from '../../features/FiveStarsReview';
@@ -8,10 +9,13 @@ import { Loader } from '../../common/components/Loader';
 import { mockSpotParams, mockСommercialSpotParams } from './mockSpotParams';
 import { ArendaModal } from '../../features/ArendaModal';
 import { CommentArea } from '../../common/components/CommentArea';
+import { SpotPlayersModal } from '../../features/SpotPlayersModal';
 
 export const Spot = ({ location }) => {
+  const dispatch = useDispatch();
   const [isLoader, setIsLoader] = React.useState(true);
-  const [isModal, setIsModal] = React.useState(false);
+  const [isArendaModal, setIsArendaModal] = React.useState(false);
+  const [isPlayersModal, setIsPlayersModal] = React.useState(false);
   const [spotParams, setSpotParams] = React.useState({});
 
   const { id } = matchPath(location.pathname, {
@@ -68,7 +72,11 @@ export const Spot = ({ location }) => {
       </div>
       {spotParams.commercial === 'платно' && (
         <div className="arenda-params">
-          <button className="open-arenda-modal" type="button" onClick={() => setIsModal(true)}>
+          <button
+            className="open-arenda-modal"
+            type="button"
+            onClick={() => setIsArendaModal(true)}
+          >
             Арендовать
           </button>
           <div className="administrator-phone">
@@ -78,11 +86,26 @@ export const Spot = ({ location }) => {
           </div>
         </div>
       )}
-      {isModal && <ArendaModal toggleModal={() => setIsModal(false)} />}
+      {isArendaModal && (
+        <ArendaModal toggleModal={() => setIsArendaModal(false)} />
+      )}
       <div className="buttons top">
-        <button className="button" type="button">Подписчики</button>
-        <button className="button" type="button">Сейчас играют</button>
-        <button className="button" type="button">Подписаться</button>
+        <button className="button" type="button">
+          Подписчики
+        </button>
+        <button
+          className="button"
+          type="button"
+          onClick={() => setIsPlayersModal(true)}
+        >
+          Сейчас играют
+        </button>
+        {isPlayersModal && (
+          <SpotPlayersModal toggleModal={() => setIsPlayersModal(false)} />
+        )}
+        <button className="button" type="button">
+          Подписаться
+        </button>
       </div>
       <div className="bottom-containter">
         <div className="title">
@@ -90,13 +113,24 @@ export const Spot = ({ location }) => {
         </div>
         <div className="blocks">
           {Object.keys(spotParams.rating).map(v => (
-            <FiveStarsReview raiting={spotParams.rating[v]} sport={v} onChoose={() => {}} />
+            <FiveStarsReview
+              raiting={spotParams.rating[v]}
+              sport={v}
+              onChoose={() => {}}
+            />
           ))}
         </div>
       </div>
       <div className="buttons">
         <div className="buttons">
-          <button type="button">
+          <button
+            type="button"
+            onClick={() => {
+              setIsPlayersModal(true);
+
+              dispatch.spot.checkinMeHere('Вахтанг Руссия');
+            }}
+          >
             <span>&#128400;</span>
             Я здесь!
           </button>
