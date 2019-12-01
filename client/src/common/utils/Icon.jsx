@@ -7,6 +7,7 @@ import Trashbox from '../Icons/Trashbox';
 import Users from '../Icons/Users';
 import User from '../Icons/User';
 import Create from '../Icons/Create';
+import Star from '../Icons/Stars';
 
 export const Icon = ({ name, svgWidth, svgHeight, color }) => {
   switch (name) {
@@ -33,6 +34,9 @@ export const Icon = ({ name, svgWidth, svgHeight, color }) => {
 
     case 'create':
       return <Create svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
+
+    case 'star':
+      return <Star svgWidth={svgWidth} svgHeight={svgHeight} color={color} />;
 
     default:
       return null;
