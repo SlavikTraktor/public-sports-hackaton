@@ -10,7 +10,8 @@ export const UserProfile = () => (
       </div>
       <div className="userprofile-rightblock">
         <div className="rightblock-Name">
-          Имя Фамилия{' '}
+          Имя Фамилия
+          {' '}
           <span>
             <a href="vk.com/#id">vk.com/#id</a>
           </span>
@@ -18,10 +19,12 @@ export const UserProfile = () => (
         <div className="rightblock-playerid">id #000001</div>
         <div className="user-info">
           <div className="info-item">
-            День рождения:<span>01 января 1970</span>
+            День рождения:
+            <span>01 января 1970</span>
           </div>
           <div className="info-item">
-            Город:<span>Санкт-Петербург</span>
+            Город:
+            <span>Санкт-Петербург</span>
           </div>
           <div className="info-item">
             Интересы:
