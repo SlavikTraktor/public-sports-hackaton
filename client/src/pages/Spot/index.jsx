@@ -10,12 +10,14 @@ import { mockSpotParams, mockСommercialSpotParams } from './mockSpotParams';
 import { ArendaModal } from '../../features/ArendaModal';
 import { CommentArea } from '../../common/components/CommentArea';
 import { SpotPlayersModal } from '../../features/SpotPlayersModal';
+import { DonationModal } from '../../features/DonationModal';
 
 export const Spot = ({ location }) => {
   const dispatch = useDispatch();
   const [isLoader, setIsLoader] = React.useState(true);
   const [isArendaModal, setIsArendaModal] = React.useState(false);
   const [isPlayersModal, setIsPlayersModal] = React.useState(false);
+  const [isDonationModal, setIsDonationModal] = React.useState(false);
   const [spotParams, setSpotParams] = React.useState({});
 
   const { id } = matchPath(location.pathname, {
@@ -140,10 +142,18 @@ export const Spot = ({ location }) => {
           </button>
         </div>
         {spotParams.commercial !== 'платно' && (
-          <button type="button">
-            <span>&#128176;</span>
-            Помочь площадке
-          </button>
+          <>
+            <button
+              type="button"
+              onClick={() => setIsDonationModal(true)}
+            >
+              <span>&#128176;</span>
+              Помочь площадке
+            </button>
+            {isDonationModal && (
+              <DonationModal toggleModal={() => setIsDonationModal(false)} />
+            )}
+          </>
         )}
         <button type="button">
           <span>&#127941;</span>
