@@ -3,6 +3,7 @@ import { Marker, Popup } from 'react-leaflet';
 import { Loader } from '../../common/components/Loader';
 import { activeIcon, defaultIcon } from './markerIcons';
 import { mockData } from './mockData';
+import { SportIcons } from '../../common/utils/SportIcons';
 
 // eslint-disable-next-line no-unused-vars
 export const MapMarker = ({ position, id }) => {
@@ -56,11 +57,7 @@ export const MapMarker = ({ position, id }) => {
           ))}
         </div>
         <div className="popup-footer">
-          {spotData.paramsList.map((_, i) => (
-            <div key={i.toString()} className="popup-footer-icon">
-              O
-            </div>
-          ))}
+          <SportIcons sports={spotData.sportTypes} />
         </div>
       </Popup>
     </Marker>
