@@ -5,6 +5,7 @@ import { Loader } from '../../common/components/Loader';
 import { activeIcon, defaultIcon } from './markerIcons';
 import { mockData } from './mockData';
 import { URLS } from '../../common/constants/constants';
+import { SportIcons } from '../../common/utils/SportIcons';
 
 // eslint-disable-next-line no-unused-vars
 export const MapMarker = ({ position, id }) => {

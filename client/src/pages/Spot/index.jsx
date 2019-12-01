@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { matchPath } from 'react-router-dom';
+import { FiveStarsReview } from '../../features/FiveStarsReview';
 import { SportIcons } from '../../common/utils/SportIcons';
 import { URLS } from '../../common/constants/constants';
 import { Loader } from '../../common/components/Loader';
 import { mockSpotParams, mockСommercialSpotParams } from './mockSpotParams';
-import { Icon } from '../../common/utils/Icon';
 
 export const Spot = ({ location }) => {
   const [isLoader, setIsLoader] = React.useState(true);
@@ -68,15 +68,7 @@ export const Spot = ({ location }) => {
         </div>
         <div className="blocks">
           {Object.keys(spotParams.rating).map(v => (
-            <div className="block">
-              <div className="icon">
-                <SportIcons sports={[v]} />
-              </div>
-              <div className="five-stars">
-                <Icon name="stars" />
-              </div>
-              <div className="text">{spotParams.rating[v]}</div>
-            </div>
+            <FiveStarsReview raiting={spotParams.rating[v]} sport={v} onChoose={() => {}} />
           ))}
         </div>
       </div>
