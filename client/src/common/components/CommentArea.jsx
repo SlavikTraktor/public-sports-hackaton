@@ -14,7 +14,7 @@ export const CommentArea = (props) => {
             <div className="comment-header">
               <h3 className="title">
                 {name}
-                <div>{moment(date).format('MMMM Do, hh:mm')}</div>
+                <div>{moment(date).lang('ru').format('MMMM Do, hh:mm')}</div>
               </h3>
             </div>
             <div className="comment-body">{text}</div>

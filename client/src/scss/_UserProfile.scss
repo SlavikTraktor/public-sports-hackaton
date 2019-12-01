@@ -161,11 +161,34 @@
     }
   }
 
+  .team-butt {
+    height: 25px;
+    width: 310px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background: $profile-grey-3;
+    border-radius: 5px;
+    color: $color-grey-3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.05) translateY(-3px);
+      box-shadow: 0 2px 5px $color-grey-1;
+    }
+  }
   .userprofile-buttonsblock {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+
     .button {
+      margin: 0;
       width: 150px;
       height: 50px;
       padding: 0 10px;
@@ -175,11 +198,14 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin-left: 10px;
       border: none;
       font-size: 14px;
       cursor: pointer;
       transition: 0.2s;
+
+      &:nth-child(2){
+        margin-left: 10px
+      }
 
       &:hover {
         transform: scale(1.05) translateY(-3px);

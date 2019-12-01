@@ -106,6 +106,10 @@ export const Spot = ({ location }) => {
             Помочь площадке
           </button>
         )}
+        <button type="button">
+          <span>&#127941;</span>
+          Турниры
+        </button>
       </div>
       <Carousel photos={spotParams.photos} />
       <CommentArea />

@@ -75,7 +75,9 @@ export const UserProfile = () => (
         </div>
       </div>
     </div>
-
+    <button type="button" className="team-butt">
+      <span>Моя команда</span>
+    </button>
     <div className="userprofile-buttonsblock">
       <button type="button" className="button">
         <Icon name="pointer" color="#414b50" />
