@@ -8,6 +8,8 @@
   margin-bottom: 10px;
   border-radius: 25px;
   color: $profile-white-1;
+  min-height: 250px;
+
   .top-container {
     .title-block {
       display: flex;
@@ -17,10 +19,12 @@
       background: $color-grey-3;
       border-radius: 15px 15px 0px 0px;
       position: relative;
+
       .text {
         text-align: center;
         font-size: 24px;
       }
+
       .id {
         position: absolute;
         top: 15px;
@@ -29,12 +33,13 @@
         color: $spots-grey-1;
       }
     }
+
     .main-block {
       display: flex;
       flex-direction: column;
       background: $profile-grey-1;
       border-radius: 0px 0px 15px 15px;
-      
+
       .item {
         font-size: 16px;
         margin: 5px 0;
@@ -44,10 +49,10 @@
           float: right;
         }
 
-        .icons{
+        .icons {
           transform: scale(0.7);
 
-          svg{
+          svg {
             margin: 0 5px;
           }
         }
@@ -55,8 +60,10 @@
     }
   }
 }
+
 .bottom-containter {
   margin-top: 25px;
+
   .title {
     display: flex;
     flex-flow: column nowrap;
@@ -64,12 +71,15 @@
     height: 60px;
     background: $color-grey-3;
     border-radius: 15px 15px 0px 0px;
+
     .text {
       text-align: center;
     }
   }
+
   .blocks {
     display: flex;
+
     .block {
       display: flex;
       justify-content: space-between;
@@ -77,15 +87,18 @@
       height: 60px;
       background: $profile-grey-1;
       border-radius: 0px 0px 15px 15px;
+
       .text {
         display: flex;
         align-items: center;
         margin-right: 10px;
-        color: #FFDF00;
+        color: #ffdf00;
       }
+
       .five-stars {
         display: flex;
         align-items: center;
+
         .star-icon {
           width: 20px;
           height: 20px;
@@ -95,16 +108,17 @@
           margin: 0 2px;
         }
       }
+
       .icon {
         height: 100%;
         display: flex;
         align-items: center;
         margin-left: 10px;
 
-        svg{
+        svg {
           transform: scale(0.7);
         }
-       }
+      }
     }
   }
 }

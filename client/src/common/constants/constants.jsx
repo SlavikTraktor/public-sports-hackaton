@@ -5,4 +5,5 @@ export const URLS = {
   PROFILE_PAGE: '/profile',
   SPOTS_PAGE: '/spots',
   SERCH_PAGE: '/search',
+  SPOT_PROFILE: '/spot/:id',
 };

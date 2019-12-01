@@ -22,6 +22,7 @@ export const App = () => (
       <Route path={URLS.SERCH_PAGE} component={Search} />
       <Route path={URLS.MAP_PAGE} component={MapPage} />
       <Route path={URLS.PROFILE_PAGE} component={UserProfile} />
+      <Route path={URLS.SPOT_PROFILE} component={Spot} />
     </Switch>
   </Router>
 );
